@@ -39,7 +39,11 @@
 // | SHIFT | ESC | GUI | COPY  | PASTE |     | PG_UP | PG_DOWN | --- | HOME | END |  \  |  1  |   2  |  3   | RET |  RET  |
 // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
             bindings = <
-             &lt 2 NON_US_BACKSLASH &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &lt 2 BACKSLASH &kp TAB &kp Q &kp W &kp E &kp R &kp T LSFT(KC_8) RSFT(KC_9) &kp Y &kp U &kp I &kp O &kp P &kp LEFT_BRACKET &kp ESCAPE &kp A &kp S &kp D &kp F &kp G &kp LA(N8) &kp LA(N9) &kp H &kp J &kp K &kp L &kp SEMICOLON &kp SINGLE_QUOTE &mt LEFT_SHIFT GRAVE &kp Z &kp X &kp C &kp V &kp B &lt 1 PAGE_UP &kp PAGE_DOWN RCTL_T(KC_HOME) &lt 1 END &kp N &kp M &kp COMMA &kp DOT &kp SLASH RSFT_T(KC_PSLS) &kp LEFT_CONTROL &kp RIGHT_BRACKET &kp EQUAL &mt LEFT_ALT KP_ASTERISK &kp LEFT_GUI &kp SPACE &kp DELETE &kp ENTER &kp BACKSPACE RALT_T(KC_MINS) &kp LEFT &kp DOWN &kp UP &kp RIGHT
+   &trans  &trans    &trans    &trans    &trans    &trans                                &trans          &trans    &trans    &trans    &trans      &trans
+   &kp ESC &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &trans               &trans &kp N6          &kp N7    &kp N8    &kp N9    &kp N0      &kp DEL
+   &trans  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &trans               &trans &kp KP_MULTIPLY &kp N4    &kp N5    &kp N6    &kp KP_PLUS &kp KP_MINUS
+   &trans  &kp ESC   &kp LGUI  &kp LG(C) &kp LG(V) &kp GRAVE &trans &trans &trans &trans &kp KP_DIVIDE   &kp N1    &kp N2    &kp N3    &kp RET     &kp RET
+   &trans  &trans    &trans    &trans          &trans        &trans &trans &trans &kp N0          &mo 3            &trans    &trans    &trans      &trans
             >;
         };
 
@@ -51,7 +55,11 @@
 // | SHIFT | ESC | GUI |   (   |  )  |     | PG_UP | PG_DOWN | --- | HOME | END   | END  | PGDN | LEFT | DOWN | RIGHT |  RET  |
 // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
             bindings = <
-            &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp PRINTSCREEN &trans KC_EXLM KC_AT KC_LCBR KC_RCBR KC_PIPE &kp F6 &kp F7 &kp KP_SLASH &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &kp EQUAL &trans KC_HASH KC_DLR &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp GRAVE &trans &trans &kp KP_ASTERISK &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS &kp F20 &trans KC_PERC KC_CIRC KC_LPRN KC_RPRN KC_TILD &trans &trans &trans &trans &kp F20 &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &kp F20 &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp INSERT &kp KP_N0 &kp KP_DOT &kp F20 &kp F20    
+   &trans  &trans    &trans   &trans   &trans   &trans                                &trans    &trans    &trans    &trans   &trans    &trans
+   &kp ESC &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT &trans               &trans &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR  &kp DEL
+   &trans  &kp UNDER &kp PLUS &kp LBRC &kp RBRC &kp PIPE  &trans               &trans &kp HOME  &kp PG_UP &kp PSCRN &kp UP   &kp GRAVE &kp TILDE
+   &trans  &kp ESC   &kp LGUI &kp LPAR &kp RPAR &kp TILDE &trans &trans &trans &trans &kp END   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp RET
+   &trans  &trans    &trans   &mo 3         &trans        &mo 3  &trans &trans &trans        &trans       &trans    &trans   &trans    &trans
             >;
         };
 
